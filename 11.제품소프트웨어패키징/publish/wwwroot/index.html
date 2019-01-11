@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>패키징 프로그램</title>
+</head>
+<body>
+    <h1>제품소프트웨어 패키징 테스트</h1>
+    <form action="db/SelectList" method="get">
+        <input type="submit" value="select호출">
+    </form>
+    <hr>
+    <form action="db/Insert" method="post">
+        <input type="text" name="title" placeholder="제목을 입력하세요"><br>
+        <input type="text" name="contents" placeholder="내용을 입력하세요"><br>
+        <input type="submit" value="insert호출">
+    </form>
+    <hr>
+    <form action="db/Update" method="post">
+        <input type="text" name="no" placeholder="번호를 입력하세요"><br>
+        <input type="text" name="title" placeholder="제목을 입력하세요"><br>
+        <input type="text" name="contents" placeholder="내용을 입력하세요"><br>
+        <input type="submit" value="update호출">
+    </form>
+    <hr>
+    <form action="db/Delete" method="post">
+        <input type="text" name="no" placeholder="번호를 입력하세요"><br>
+        <input type="submit" value="delete호출">
+    </form>
+</body>
+</html>
